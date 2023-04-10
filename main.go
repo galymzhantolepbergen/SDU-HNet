@@ -1,18 +1,19 @@
+// `main.go`
 package main
 
 import (
-	"fmt"
-	"net/http"
+	"github.com/gin-gonic/gin"
 )
 
-func helloWorldHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "Hello, world!")
-}
 func main() {
-	mux := http.NewServeMux()
-	println("http://localhost:8000/")
+	// Create Gin engine with Logger and Recovery middleware
+	r := gin.Default()
 
-	mux.HandleFunc("/", helloWorldHandler)
-	http.ListenAndServe(":8080", mux)
+	// Add routes here
+	// ...
 
+	// Run the server
+	if err := r.Run(":8080"); err != nil {
+		panic(err)
+	}
 }
