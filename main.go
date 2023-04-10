@@ -1,19 +1,20 @@
-// `main.go`
 package main
 
 import (
+	"net/http"
+
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	// Create Gin engine with Logger and Recovery middleware
-	r := gin.Default()
+	// Create a new Gin router
+	router := gin.Default()
 
-	// Add routes here
-	// ...
+	// Define a route and a handler function
+	router.GET("/", func(c *gin.Context) {
+		c.String(http.StatusOK, "Hello, World!")
+	})
 
-	// Run the server
-	if err := r.Run(":8080"); err != nil {
-		panic(err)
-	}
+	// Start the server
+	router.Run(":8080")
 }
