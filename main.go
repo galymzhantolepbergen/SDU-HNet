@@ -10,8 +10,9 @@ func helloWorldHandler(w http.ResponseWriter, r *http.Request) {
 }
 func main() {
 	mux := http.NewServeMux()
+	println("http://localhost:8000/")
 
 	mux.HandleFunc("/", helloWorldHandler)
-
 	http.ListenAndServe(":8080", mux)
+
 }
