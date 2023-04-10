@@ -1,23 +1,17 @@
 package main
 
 import (
-	"net/http"
-
+	"github.com/galymzhantolepbergen/SDU-HNet/routes"
 	"github.com/gin-gonic/gin"
+	// "github.com/yourusername/yourapp/routes"
 )
 
 func main() {
-	// Create a new Gin router
 	router := gin.Default()
 	println("http://localhost:8080/")
 
-	// Switch to release mode
-	gin.SetMode(gin.ReleaseMode)
-
-	// Define a route and a handler function
-	router.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hello, World!")
-	})
+	// Set up routes
+	routes.SetupRoutes(router)
 
 	// Start the server
 	router.Run(":8080")

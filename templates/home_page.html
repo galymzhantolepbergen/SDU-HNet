@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDU-HNet</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Zz6U5a6onMzoXQ5Q2QNmTRjJyQ2MSy7PvxIynJdCkVjZcP//C7X+JxOuZROeDnwY" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SDU-HNet</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Network Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Troubleshooting</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-header bg-info text-white">
+            Network Overview
+          </div>
+          <div class="card-body">
+            <p class="card-text">Latency: <span class="text-success">10ms</span></p>
+            <p class="card-text">Packet Loss: <span class="text-success">0%</span></p>
+            <p class="card-text">Throughput: <span class="text-success">100 Mbps</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-header bg-info text-white">
+            AI Diagnostic
+          </div>
+          <div class="card-body">
+            <p class="card-text">Anomalies Detected: <span class="text-success">None</span></p>
+            <p class="card-text">Security Threats: <span class="text-success">None</span></p>
+            <p class="card-text">DDoS Attacks: <span class="text-success">None</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h2 class="text-center">Welcome to SDU-HNet</h2>
+                    <p class="text-center">Please enter your phone number to receive a verification code:</p>
+                </div>
+            </div>
+    
+            <div class="row mt-3 justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Send Verification Code</button>
+                    </form>
+                </div>
+            </div>
+    
+        </div>
+    
+        <!-- jQuery and Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-/T00T0QGgpYjwelZ3LCR2RzJmU4KZVJ3wEKtDp4jFgBtJzjKgq5f+5/f5I462H3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-kqh8K6v0yz0nkuAU6pDUzjAY8NvVE9dZoNQTwN25FLw6Mj/xMnKTFF6UaM6/1x3m" crossorigin="anonymous"></script>
+    </body>
+    </html>
