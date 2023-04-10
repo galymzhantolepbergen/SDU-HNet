@@ -1,20 +1,23 @@
 package main
 
 import (
-	"net/http"
+    "net/http"
 
-	"github.com/gin-gonic/gin"
+    "github.com/gin-gonic/gin"
 )
 
 func main() {
-	// Create a new Gin router
-	router := gin.Default()
+    // Create a new Gin router
+    router := gin.Default()
 
-	// Define a route and a handler function
-	router.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hello, World!")
-	})
+    // Switch to release mode
+    gin.SetMode(gin.ReleaseMode)
 
-	// Start the server
-	router.Run(":8080")
+    // Define a route and a handler function
+    router.GET("/", func(c *gin.Context) {
+        c.String(http.StatusOK, "Hello, World!")
+    })
+
+    // Start the server
+    router.Run(":8080")
 }
