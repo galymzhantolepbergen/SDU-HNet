@@ -1,3 +1,4 @@
+<!--`home_page.html`  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,54 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SDU-HNet</title>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" integrity="sha384-Zz6U5a6onMzoXQ5Q2QNmTRjJyQ2MSy7PvxIynJdCkVjZcP//C7X+JxOuZROeDnwY" crossorigin="anonymous">
-  <!-- Custom CSS -->
-  <!-- <link rel="stylesheet" href="/static/css/style.css"> -->
-  <style>
-    body {
-      background: linear-gradient(to bottom, #0c1b25, #08212d);
-      color: #fff;
-    }
-
-    .navbar {
-      background: linear-gradient(to bottom, #08212d, #0c1b25);
-    }
-
-    .card-header {
-      background-color: #0c1b25;
-      border-radius: 0;
-      font-weight: bold;
-    }
-
-    .card {
-      background-color: #1a2a3d;
-      border-radius: 0;
-      border: none;
-      color: #fff;
-    }
-
-    .form-label {
-      font-weight: bold;
-    }
-
-    .btn-primary {
-      background-color: #00bcd4;
-      border-color: #00bcd4;
-    }
-
-    .btn-primary:hover {
-      background-color: #007a8c;
-      border-color: #007a8c;
-    }
-
-    footer {
-      background-color: #08212d;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-    }
-  </style>
-</head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"> <link rel="stylesheet" href="https://getbootstrap.com/docs/5.3/examples/product/product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+  </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -62,7 +18,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item">
             <a class="nav-link active" href="#">Dashboard</a>
           </li>
@@ -76,63 +32,53 @@
       </div>
     </div>
   </nav>
-
+  <br>
   <!-- Main Content -->
   <div class="container mt-4">
+    <h2 class="text-center">Welcome to SDU-HNet</h2>
+    <br>
     <div class="row">
-
-      <div class="col-md-4 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="text-center">Welcome to SDU-HNet</h2>
-            <p class="text-center">Please enter your phone number to receive a verification code
-              <div class="row mt-3 justify-content-center">
-                <div class="col-md-6">
-                  <form>
-                    <div class="mb-3">
-                      <label for="phone" class="form-label">Phone Number</label>
-                      <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-lg w-100">Send Verification Code</button>
-                  </form>
-                </div>
-              </div>
-            </div>    
-        </div> 
-      </div>
-      <br>
-
-      <div class="col-md-4 mb-3">
-        <div class="card">
-          <div class="card-header bg-info text-white">
+      <!--  -->
+      <div class="col-md-4 mb-3 ">
+        <div class="card bg-secondary">
+          <div class="card-header text-center text-white">
             Network Overview
           </div>
-          <div class="card-body">
+          <div class="card-body bg-white">
             <p class="card-text">Latency: <span class="text-success">10ms</span></p>
             <p class="card-text">Packet Loss: <span class="text-success">0%</span></p>
             <p class="card-text">Throughput: <span class="text-success">100 Mbps</span></p>
           </div>
         </div>
       </div>
-      <br>
-
+      <!--  -->
       <div class="col-md-4 mb-3">
-        <div class="card">
-          <div class="card-header bg-info text-white">
+        <div class="card bg-success">
+          <div class="card-header text-center text-white">
             AI Diagnostic
           </div>
-          <div class="card-body">
+          <div class="card-body bg-white ">
             <p class="card-text">Anomalies Detected: <span class="text-success">None</span></p>
             <p class="card-text">Security Threats: <span class="text-success">None</span></p>
             <p class="card-text">DDoS Attacks: <span class="text-success">None</span></p>
           </div>
         </div>
       </div>
-
-
+      <!--  -->
+      <div class="col-md-4 mb-3">
+        <div class="card bg-secondary">
+          <div class="card-header text-center text-white">
+            Speed
+          </div>
+          <div class="card-body bg-white ">
+            <p class="card-text">Download: <span class="text-success">17Mbps</span></p>
+            <p class="card-text">Upload: <span class="text-success">20Mbps</span></p>
+            <p class="card-text">Connecting: <span class="text-success">70%</span></p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-    
         <!-- jQuery and Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-/T00T0QGgpYjwelZ3LCR2RzJmU4KZVJ3wEKtDp4jFgBtJzjKgq5f+5/f5I462H3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-kqh8K6v0yz0nkuAU6pDUzjAY8NvVE9dZoNQTwN25FLw6Mj/xMnKTFF6UaM6/1x3m" crossorigin="anonymous"></script>
